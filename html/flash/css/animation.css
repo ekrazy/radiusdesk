@@ -1,0 +1,275 @@
+// We are referencing this library
+// https://github.com/IanLunn/Hover/blob/master/README.md#hovercss
+
+/* Forward */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+
+/* Sweep To Top */
+.button-primary {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.button-primary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $orange2;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.button-primary:hover {
+  @media (min-width:$screen-md) {
+    color: white !important;
+  }
+}
+.button-primary:hover:before {
+  @media (min-width:$screen-md) {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+.button-primary.inactive:hover {
+  @media (min-width:$screen-md) {
+    color: #A1A7B5 !important;
+  }
+}
+.button-primary.inactive:hover:before {
+  @media (min-width:$screen-md) {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
+
+
+/* Icon Down */
+@-webkit-keyframes hvr-icon-down {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@keyframes hvr-icon-down {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+/* Icon Down */
+.hvr-icon-down {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+
+  &.infinite {
+    .hvr-icon {
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-name: hvr-icon-down;
+    }
+  }
+}
+.hvr-icon-down .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-down:hover .hvr-icon, .hvr-icon-down:focus .hvr-icon, .hvr-icon-down:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-down;
+  animation-name: hvr-icon-down;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.vertical-reveal-outer,
+.vertical-reveal-inner {
+  display: block; }
+
+.vertical-reveal-outer {
+  width: 100%;
+  overflow: hidden; }
+
+.vertical-reveal-inner {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  //line-height: 94%;
+  opacity: 0; }
+  .vertical-reveal-inner.visible {
+    -webkit-animation: 1.5s verticalReveal 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-animation: 1.5s verticalReveal 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-animation: 1.5s verticalReveal 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -o-animation: 1.5s verticalReveal 1 cubic-bezier(0.19, 1, 0.22, 1);
+    animation: 1.5s verticalReveal 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+.vertical-fade-in-outer,
+.vertical-fade-in-inner {
+  display: block; }
+
+.vertical-fade-in-inner {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  opacity: 0; }
+  .vertical-fade-in-inner.visible {
+    -webkit-animation: 1.5s verticalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-animation: 1.5s verticalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-animation: 1.5s verticalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -o-animation: 1.5s verticalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    animation: 1.5s verticalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+.horizontal-fade-in-outer,
+.horizontal-fade-in-inner {
+  display: block; }
+
+.horizontal-fade-in-inner {
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0; }
+  .horizontal-fade-in-inner.visible {
+    -webkit-animation: 1.5s horizontalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-animation: 1.5s horizontalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-animation: 1.5s horizontalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -o-animation: 1.5s horizontalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    animation: 1.5s horizontalFadeIn 1 cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+  @-webkit-keyframes verticalReveal {
+  0% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } 
+  }
+
+@-moz-keyframes verticalReveal {
+  0% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } 
+  }
+
+@-ms-keyframes verticalReveal {
+  0% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } 
+  }
+
+@keyframes verticalReveal {
+  0% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } 
+  }

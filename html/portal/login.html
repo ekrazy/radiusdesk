@@ -1,0 +1,31 @@
+<html><head>
+<title>Amathuba</title>
+</head>
+<body>
+<form name="redirect" action="http://10.20.0.246/portal/pages-sign-in.html" method="POST">
+
+<input type="hidden" name="res" value="notyet" />
+<input type="hidden" name="mac" value="$(mac)" />
+<input type="hidden" name="user" value="$(username)" />
+<input type="hidden" name="uamport" value="mikrotik" />
+<input type="hidden" name="userurl" value="$(link-orig)" />
+<input type="hidden" name="nasid" value="$(identity)" />
+<input type="hidden" name="uamip" value="$(hostname)" />
+<input type="hidden" name="error" value="$(error)" />
+<input type="hidden" name="chap-id" value="$(chap-id)" />
+<input type="hidden" name="chap-challenge" value="$(chap-challenge)" />
+<input type="hidden" name="ssl-login" value="$(ssl-login)" />
+
+</form>
+
+<script language="JavaScript"> 
+
+<!--
+
+ document.redirect.submit();
+
+ //-->
+
+</script>
+</body>
+</html>

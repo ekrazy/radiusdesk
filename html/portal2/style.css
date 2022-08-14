@@ -1,0 +1,304 @@
+* {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 14px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: .9375rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.227px;
+    padding-top: 0.227px;
+    color: #000;
+    background-color: #fff;
+}
+
+.sign-in-box {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 440px;
+	width: calc(100% - 40px);
+	padding: 44px;
+	margin-bottom: 28px;
+	background-color: #fff;
+	min-width: 320px;
+	min-height: 338px;
+	overflow: hidden;
+  }
+
+  @media (max-width: 600px), (max-height: 366px){
+	.sign-in-box {
+	  padding: 24px;
+	  padding-bottom: 24px;
+	  margin-top: 0;
+	  margin-bottom: 88px;
+	  width: 100%;
+	  width: 100vw;
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  border: 0;
+	}
+  }
+
+.tile-img.medium {
+	width: 32px;
+	height: 32px; 
+  }
+
+.table {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	max-width: 100%;
+  }
+
+.table .table-cell {
+	display: table-cell;
+	vertical-align: middle;
+  }
+
+.tile-img {
+	position: relative;
+	width: 48px;
+	height: 48px;
+  }
+
+.row.tile {
+	margin-bottom: 0;
+	outline: none;
+	color: inherit;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+  .row.tile .content {
+	line-height: 16px;
+	padding-left: 12px;
+	padding-right: 12px;
+  }
+
+.row.tile .table {
+	padding-top: 8px;
+	padding-bottom: 8px;
+  }
+
+.logo {
+height: 70px;
+margin-bottom: 5px;
+}
+.button.primary {
+	color: #fff;
+	border-color: #0067b8;
+	background-color: #0067b8;
+	padding: 4px 12px 4px 12px;
+	height: 32px;
+	height: 2.625rem;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    touch-action: manipulation;
+	border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    min-height: 32px;
+    border: none;
+    min-width: 108px;
+    line-height: normal;
+    font-weight: 600;
+
+  }
+
+.smallhref {
+	font-size: .85rem;
+	text-decoration: none;
+	color: #0067b8;
+	border: none;
+	background-color: transparent;
+	padding-left: 0px;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+.button.secondary {
+	color: #000;
+	padding: 4px 12px 4px 12px;
+	height: 32px;
+	height: 2.625rem;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    touch-action: manipulation;
+	border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    min-height: 32px;
+    border: none;
+    background-color: #ccc;
+    background-color: rgba(0,0,0,0.2);
+    min-width: 108px;
+    line-height: normal;
+    font-weight: 600;
+  }
+
+   .links_button {
+	padding-top: 8px;
+	text-decoration: none;
+}
+
+
+  .login_button {
+	margin-top: 10px;
+}
+
+  .button.secondary:hover {
+	background-color: #b2b2b2;
+	background-color: rgba(0,0,0,0.3);
+  }
+
+.no-padding-left-right {
+	padding-left: 0;
+	padding-right: 0;
+  }
+
+.button.primary:hover {
+	background-color: #005da6;
+  }
+
+.inline-block {
+	display: inline-block;
+  }
+
+.button-container {
+	bottom: 0;
+	right: 0;
+	text-align: right;
+  }
+
+.col-md-24 {
+	width: 100%;
+  }
+
+.col-xs-24 {
+	width: 100%;
+  }
+
+p {
+	margin-top: 5px;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    line-height: 1.75rem;
+    padding-bottom: 2.3632px;
+    padding-top: 2.3632px;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+
+  .text-box {
+	padding: 4px 8px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.4);
+	background-color: rgba(255,255,255,0.4);
+	height: 32px;
+	height: 2rem;
+	padding: 6px 10px;
+	  padding-left: 10px;
+	border-width: 1px;
+	  border-top-width: 0px;
+	  border-right-width: 0px;
+	  border-left-width: 0px;
+	border-color: #666;
+	border-color: rgba(0,0,0,0.6);
+	height: 38px;
+	outline: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	background-color: transparent;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	padding-left: 0;
+	width: 100%;
+  }
+
+.login h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+
+.no-account {
+ font-size: .9125rem;
+ padding: 20px 0 20px 0;
+
+}
+.login form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	/** justify-content: center; **/
+  	padding-top: 20px;
+}
+.login form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  	width: 400px;
+  	height: 50px;
+  	margin-bottom: 18px;
+}
+.login form input[type="submit"] {
+  	width: 100%;
+ 	margin-top: 20px;
+	min-width: 108px;
+	min-height: 32px;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
