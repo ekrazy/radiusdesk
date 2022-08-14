@@ -1,6 +1,7 @@
 <?php 
     session_start(); 
     $error = $_SESSION['error'];
+    echo "testing Git";
 ?>
 
 <!doctype html>
